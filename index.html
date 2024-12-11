@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ลืม - FORGOT</title>
+    <link rel="icon" type="image/x-icon" href="assets/ForgotLogo2.png">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+<div class="areaWithHeader">
+    <h1 class="header">ลืม - FORGOT</h1>
+    <div id="areaContainer">
+        <div class="titleContainer">
+                <img src="assets/ForgotLogo2.png" id="ForgotLogo" onclick="location.reload();">      
+            
+            <h2 class="title">เปลี่ยนข้อความที่พิมพ์ผิด&nbsp;<br id="newLine">เมื่อลืมปิด Caps Lock</h2>
+            <button id="darkModeBtn" onclick="darkMode()">
+                <i class="material-icons" id="light_mode">light_mode</i>
+                <i class="material-icons" id="dark_mode">dark_mode</i>
+            </button>
+        </div>
+
+        <div class="mainArea">
+
+            <div class="container">
+                <textarea class="textBox" id="textInput" placeholder="กรอกข้อความที่พิมพ์ผิด"></textarea>
+                <button type="button" id="swapBtn" onclick="textSwap()">
+                    <i class="material-icons" id="sync_alt">sync_alt</i>
+                </button>
+                <textarea readonly class="textBox"id="textOutput"></textarea>          
+            </div>
+            
+            <div class="footerContainer">
+            <button type="button" class="convertBtn" id="convertBtn" onclick="capsOnConvert()">Caps lock</button>
+            </div>
+        </div>
+     </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

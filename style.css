@@ -1,0 +1,393 @@
+body, html {
+    background-color: #2C2D30;
+    color: white;
+    font-family: "Mitr", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+.areaWithHeader{
+    width: 1248px;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#areaContainer{
+    flex-grow: 1;
+    background-color: #171717;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #424347;
+    border-width: 1px;
+    display: flex;
+    flex-direction: column;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+}
+
+.titleContainer{
+    width: 100%;
+    display: flex;
+    justify-content:  space-between;
+    align-items: center;
+}
+h1{
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: 600;
+}
+
+#ForgotLogo{
+    margin-top: 3vh;
+    position: absolute;
+    height: 50px;
+    margin-left: 65px;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#ForgotLogo:hover{
+    height: 55px;
+    rotate: -15deg;
+    cursor: pointer;
+}
+#ForgotLogo:active{
+    height: 52px;
+    rotate: -15deg;
+    margin-left: 67px;;
+}
+
+h2{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    font-weight: 500;
+    color: white;
+}
+#darkModeBtn{
+    margin-top: 3vh;
+    position: absolute;
+    margin-left: 1130px;;
+    border-style: solid;
+    border-radius: 12px;
+    border-color: #424347;
+    border-width: 1px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #E4F065;
+    color: #171717; 
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+#darkModeBtn:hover{
+    background-color: #e0f11c;
+    cursor: pointer;
+}
+#darkModeBtn:active{
+    background-color: #2C2D30;
+    color: #424347;
+}
+
+.mainArea{
+    flex-grow: 1;
+    width: 100%;    
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+.container{
+    width: 100%;    
+    height: 80%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.textBox{
+    height: 70%;
+    width: 40%;
+    color: white;
+
+    background-color: #171717;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #424347;
+    border-width: 1px;
+    resize: none;
+
+    font-family: "Mitr", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+
+    padding: 15px;
+
+}
+
+#textInput{
+    background-color: #2C2D30;
+}
+#textOutput{
+    outline: none;
+    box-shadow: none;
+}
+
+#swapBtn{
+    margin: 10px;
+    background-color: #2C2D30;
+    color: white;
+
+    border-radius: 11px;
+    border-style: solid;
+    border-color: #424347;
+    border-width: 1px;
+
+    height: 40px;
+    width: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#swapBtn:hover{
+    background-color: #28282b;
+    cursor: pointer;
+}
+#swapBtn:active{
+    background-color: #2C2D30;
+    color: #424347;
+}
+
+#sync_alt{
+    font-size: 20px;
+}
+
+.footerContainer{
+    flex-grow: 1;
+    width: 100%;   
+    display: flex; 
+    flex-direction: space-between;
+    justify-content: center;
+    align-items: center;
+}
+.convertBtn{
+    width: 150px;
+    height: 50%;
+    background-color: #B8A5EF;
+    color: #171717;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 50px;
+
+    border-radius: 11px;
+    border-style: solid;
+    border-color: #424347;
+    border-width: 1px;
+
+    font-family: "Mitr", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 30px;
+}
+
+.convertBtn:hover{
+    background-color: #aa94ec;
+    cursor: pointer;
+}
+.convertBtn:active{
+    background-color: #2C2D30;
+    color: #424347;
+}
+
+.textBox::-webkit-scrollbar {
+    width: 10px;
+}
+.textBox::-webkit-scrollbar-track {
+    background: #888; 
+    border-radius: 30px;
+}
+.textBox::-webkit-scrollbar-thumb {
+    background: #555; 
+    border-radius: 30px;
+}
+.textBox::-webkit-scrollbar-thumb:hover {
+    background: #424347; 
+    cursor: pointer;
+}
+
+#newLine{
+    display: none;
+}
+
+@media screen and (max-width: 1313px) {
+    .areaWithHeader{
+        width: 95vw;
+    }
+    #darkModeBtn{
+        position: absolute;
+        margin-left: 86%;;
+    }
+    #ForgotLogo{
+        position: absolute;
+        margin-left: 5vw;
+    }
+    #ForgotLogo:active{
+        margin-left: 5vw;
+    }
+
+}
+
+@media screen and (max-width: 719px) {
+    .container{
+        flex-direction: column;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    .textBox{
+        width: 80%;
+        text-align: left;
+    }
+    #darkModeBtn{
+        margin-top: 3vh;
+        position: absolute;
+        margin-left: 80%;;
+    }
+    .areaWithHeader{
+        height: 90vh;
+    }
+    .convertBtn{
+        margin-bottom: 5%;
+    }
+    .textBox{
+        font-size: 18px;
+    }
+    h2{
+        font-size: 22px;
+    }
+    #newLine{
+        display: block;
+    }
+
+}
+
+
+
+
+.light-mode {
+    background-color: white;
+    color: #2C2D30;
+}
+
+.light-mode #areaContainer {
+    background-color: #F3F2F8;
+    border-color: #cbc9d5; 
+}
+
+.light-mode #textInput {
+    background-color: white;
+    border-color: #cbc9d5; 
+    color: #2C2D30;
+}
+.light-mode #textOutput {
+    background-color: #F3F2F8;
+    border-color: #cbc9d5; 
+    color: #2C2D30;
+}
+
+.light-mode #swapBtn {
+    background-color: white;
+    border-color: #cbc9d5; 
+    color: #2C2D30;
+}
+.light-mode #swapBtn:hover {
+    background-color: #F3F2F8;
+    border-color: #cbc9d5; 
+}
+.light-mode #swapBtn:active {
+    background-color: white;
+    border-color: #cbc9d5; 
+    color: #cbc9d5;
+}
+
+swapBtn:hover{
+    background-color: #28282b;
+    cursor: pointer;
+}
+#swapBtn:active{
+    background-color: #2C2D30;
+    color: #424347;
+}
+
+.light-mode #convertBtn {
+    background-color: #E4F065;
+    border-color: #cbc9d5; 
+}
+.light-mode #convertBtn:hover {
+    background-color: #e0f11c;
+    border-color: #cbc9d5; 
+}
+.light-mode #convertBtn:active {
+    background-color: #F3F2F8;
+    color: #cbc9d5;
+}
+
+
+.light-mode #darkModeBtn {
+    background-color: #B8A5EF;
+    border-color: #cbc9d5; 
+    color: white;
+}
+.light-mode #darkModeBtn:hover {
+    background-color: #aa94ec;
+    border-color: #cbc9d5; 
+}
+.light-mode #darkModeBtn:active {
+    background-color: #F3F2F8;
+    color: #cbc9d5;
+}
+
+.light-mode h2{
+    color: #2C2D30;
+}
+
+
+.light-mode .textBox::-webkit-scrollbar {
+    width: 10px;
+}
+.light-mode.textBox::-webkit-scrollbar-track {
+    background: #cbc9d5; 
+    border-radius: 30px;
+}
+.light-mode.textBox::-webkit-scrollbar-thumb {
+    background: rgb(177, 176, 180);
+    border-radius: 30px;
+}
+.light-mode.textBox::-webkit-scrollbar-thumb:hover {
+    background: rgb(147, 144, 151); 
+    cursor: pointer;
+
+}
+
+
